@@ -11,5 +11,3 @@ app.use('/films', filmsRouter);
 app.listen(config.get('api.port'), () => {
   console.log(`Server started on port ${config.get('api.port')}`);
 });
-
-module.export = app;
