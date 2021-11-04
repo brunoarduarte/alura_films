@@ -1,9 +1,6 @@
 const router = require('express').Router();
-const filmsModel = require('../model/filmsModel');
+const filmsController = require('../controller/filmsController');
 
-router.get('/', async (req, res) => {
-  const result = await filmsModel.list();
-  res.status(200).json(result);
-});
+router.get('/', filmsController.getAllFilms);
 
 module.exports = router;

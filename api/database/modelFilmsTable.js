@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const instancia = require('./index');
+const instancia = require('./dbindex');
 
 const columns = {
   name: {
@@ -25,4 +25,4 @@ const options = {
   version: 'version'
 }
 
-module.exports = instancia.define('fornecedor', columns, options);
+module.exports = instancia.define('films', columns, options);
